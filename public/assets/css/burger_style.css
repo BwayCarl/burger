@@ -1,0 +1,7 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC', sans-serif;
+
+    /* #title  { */
+        font-family: 'Ranchers', cursive;
+      }
