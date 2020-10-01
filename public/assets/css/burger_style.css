@@ -1,7 +1,23 @@
+* {
+  background-color: transparent;
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
-    font-family: 'Noto Sans TC', sans-serif;
+    
+}
 
-    /* #title  { */
+body, html {
+  height: 100%;
+}
+
+  #title {
         font-family: 'Ranchers', cursive;
+        font-size: larger;
       }
+
+.bg {
+    background-image: no-repeat center center fixed;
+    height: 100vh;
+    }
+      
