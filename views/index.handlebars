@@ -1,6 +1,68 @@
-<ol>
-  {{#each burger}}
-    <li>
-    </li>
-  {{/each}}
-</ol>
+
+<div class="container bg">
+	<div class="row">
+	    <div class="center col-sm-12">
+			<img src="public/assets/img/burger-1634705_1920.jpg" alt="Eat-Da-Burger App">
+	        <h1>Eat Da Burger!</h1>
+	        <br>
+	    </div>
+  	</div>
+
+	<div class="row">
+	    <div class="col-sm-6">
+			
+			<h2>Burgers To Eat!</h2>
+			<ul>
+			  {{#each burgers}}
+			    {{#unless this.devoured}}
+			      <li>
+			      	{{this.id}}
+			        {{this.burger_name}}
+
+			        <form action="/{{this.id}}?_method=PUT" method="POST">
+			          <input type="hidden" name="devoured" value="true">
+			          <button class="btn-primary" type="submit">Devour It!</button>
+			        </form>
+
+			      </li>
+			    {{/unless}}
+			  {{/each}}
+			</ul>
+	</div>
+
+	  <div class="col-sm-6">
+          <h2>Devoured Burgers</h2>
+        
+          {{#each burgers}}
+            {{#if this.devoured}}
+              <li>
+                {{this.id}}
+                {{this.burger_name}}
+
+              </li>
+            {{/if}}
+          {{/each}}
+      </div>
+  	</div>
+
+	<div class="row">
+	    <div class="center col-sm-12">
+
+			<h2>Add Your Own Burger!</h2>
+
+			<form class="create-update-form" action="/" method="POST">
+
+			  <div class="form-group">
+			    
+			    <input type="text" id="ca" placeholder="What's your favorite?" name="burger_name">
+			  </div>
+			  
+			  <button class="btn-danger" type="submit">Submit Order</button>
+			</form>
+
+	    </div>
+	
+  	</div>
+
+
+</div>
