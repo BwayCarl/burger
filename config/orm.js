@@ -1,4 +1,4 @@
-// This colde borrowed from a previous exercise as a template.
+// This code borrowed from a previous exercise as a template.
 
 const connection = require("./connection.js");
 
