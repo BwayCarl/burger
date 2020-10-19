@@ -1,5 +1,5 @@
+$(document).ready(function() {
 
-$(function () {
     $(".devoured").on("click", function (event) {
         var id = $(this).data("id");
         if ($(this).data("devoured") === 0){
@@ -15,8 +15,7 @@ $(function () {
         $.ajax("/api/burgers/" + id, {
             type: "PUT",
             data: newDevoured
-        }).then(
-            function () {
+        }).then(function () {
                 console.log("Changed devoured status to ", devoured);
                 location.reload();
             }
@@ -27,8 +26,8 @@ $(function () {
         event.preventDefault();
 
         var newBurger = {
-            burger_name: $("#nom").val(),
-            devoured: $("[name=devoured]:checked").val()
+            burger_name: $("#bur").val(),
+            devoured: $("[burger_name=devoured]:checked").val()
         };
 
         // Send the POST request.
@@ -37,7 +36,7 @@ $(function () {
             data: newBurger
         }).then(
             function () {
-                console.log("created new burger on the menu");
+                console.log("Created new burger");
                 // Reload the page to get the updated list
                 location.reload();
             }

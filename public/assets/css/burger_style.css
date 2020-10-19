@@ -1,23 +1,30 @@
-* {
-  background-color: transparent;
-}
-
 *, *::before, *::after {
     box-sizing: border-box;
+    margin-top: 1rem;
     
 }
 
+.container {
+  background-image: url("assets/image/table-791167_1920.jpg") no-repeat center center fixed;
+}
 body, html {
+  background-image: url("assets/image/table-791167_1920.jpg") no-repeat center center fixed;
+  background-color: none;
   height: 100%;
 }
 
-  #title {
+.title-img {
+  max-height: 60px;
+}
+  h1 {
         font-family: 'Ranchers', cursive;
-        font-size: larger;
+        font-size: 60px;
+      }
+  h2 {
+        font-family: 'Ranchers', cursive;
+        font-size: 30px;
       }
 
-.bg {
-    background-image: no-repeat center center fixed;
-    height: 100vh;
-    }
-      
+.btn {
+  border-radius: 2rem;
+}
