@@ -5,11 +5,12 @@ CREATE DATABASE IF NOT EXISTS burgers_db;
 USE burgers_db;
 
 -- Drop table if it already exists
-DROP TABLE IF EXISTS burgers
+DROP TABLE IF EXISTS burgers;
 
 -- Create table
 CREATE TABLE burgers (
-    id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
-    burger_name VARCHAR (255) NOT NULL,
-    devoured BOOLEAN DEFAULT FALSE
+    id INT AUTO_INCREMENT NOT NULL,
+    burgerName VARCHAR (255) NOT NULL,
+    devoured BOOLEAN DEFAULT FALSE,
+    PRIMARY KEY (id)
 );

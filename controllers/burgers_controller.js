@@ -2,31 +2,30 @@ const express = require("express");
 const router = express.Router();
 var burger = require("../models/burger.js");
 
-// GET ROUTE for all burgers existing in database
+// GET ROUTE for the main page
 router.get("/", function(req, res) {
-  burger.all(function(data) {
-    var hbsObject = {
-      burgers: data
-    };
-    console.log(hbsObject);
-    res.render("index", hbsObject);
+    res.redirect("/burgers");
   });
-});
+
+  router.get("/burgers", function(req, res) {
+    burger.all(function(allBurgers) {
+      res.render("index", { burger_data: allBurgers });
+    });
+  });
 
 //Creating a new burger with POST Method
 router.post("/burgers/create", (req, res) => {
-    burger.create(
-        req.body.burger_name,  (res) => {
+    burger.createOne(req.body.burgerName, (result) => {
+        console.log(result);
         res.redirect("/");
       });
   });
 
 //Updating whether object is devoured with PUT Method
 router.put("/burgers/:id", (req, res) => {
-   
-    burger.update(req.params.id,(result) => {
-      console.log(result);
-      res.redirect("/");
+    burger.updateOne(req.params.id,function (result) {
+        console.log(result);
+        res.sendStatus(200);
       });
   });
 

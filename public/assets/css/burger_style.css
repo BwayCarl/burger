@@ -1,30 +1,52 @@
 *, *::before, *::after {
     box-sizing: border-box;
     margin-top: 1rem;
-    
 }
-
-.container {
-  background-image: url("assets/image/table-791167_1920.jpg") no-repeat center center fixed;
+html, body {
+  color: #f5f5f5;
+  background-color: #000000;
 }
-body, html {
-  background-image: url("assets/image/table-791167_1920.jpg") no-repeat center center fixed;
-  background-color: none;
-  height: 100%;
+.page-wrapper {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 3rem;
+  background-image: url(/assets/image/table-791167_1920.jpg);
+  background-repeat: repeat;
+  background-attachment: fixed;
 }
 
 .title-img {
-  max-height: 60px;
+  max-height: 80px;
 }
   h1 {
         font-family: 'Ranchers', cursive;
+        color: #f5f5f5;
+        text-shadow: rgb(184, 158, 158) 3px 3px;
         font-size: 60px;
       }
   h2 {
         font-family: 'Ranchers', cursive;
+        color: #f5f5f5;
+        text-shadow: rgb(184, 158, 158) 3px 3px;
         font-size: 30px;
       }
+  h4  {
+        font-family: 'Ranchers', cursive;
+        color: #f5f5f5;
+        text-shadow: rgb(184, 158, 158) 2px 2px;
+        font-size: 25px;
+      }  
 
+.lists, p {
+  color: #f5f5f5;
+  font-size: 18px;
+  font-weight: bold;
+}
 .btn {
   border-radius: 2rem;
+  box-shadow: rgb(127, 145, 163) 4px 4px;
+}
+
+#title-img {
+  max-height: 140px;
 }
