@@ -9,10 +9,8 @@ $(document).ready(function() {
       $.ajax({
         method: "PUT",
         url: "/burgers/" + burgerID
-      }).then((data) => {
-              // reload page to display devoured burger in proper column
-              location.reload();
-          });
-  
+      }).then(function (data) {
+          location.reload();
+        });
     });
   });
