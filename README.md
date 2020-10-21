@@ -1,9 +1,9 @@
 # "Eat-Da-Burger" App
 [![Personal IDBadge](https://img.shields.io/badge/Dev-BwayCarl-red)](https://bwaycarl.github.io/Portfolio/)
-[![GitHub license](https://img.shields.io/github/license/BwayCarl/burger?logo=MIT)](https://github.com/BwayCarl/burger/blob/master/LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/BwayCarl/burger)](https://github.com/BwayCarl/Template-Engine/issues)
-[![GitHub forks](https://img.shields.io/github/forks/BwayCarl/burger)](https://github.com/BwayCarl/Template-Engine/network)
-[![GitHub stars](https://img.shields.io/github/stars/BwayCarl/burger)](https://github.com/BwayCarl/Template-Engine/stargazers)
+[![GitHub license](https://img.shields.io/github/license/BwayCarl/burger?logo=MIT)](https://img.shields.io/github/license/BwayCarl/burger)
+[![GitHub issues](https://img.shields.io/github/issues/BwayCarl/burger)](https://img.shields.io/github/issues/BwayCarl/burger)
+[![GitHub forks](https://img.shields.io/github/forks/BwayCarl/burger)](https://img.shields.io/github/forks/BwayCarl/burger)
+[![GitHub stars](https://img.shields.io/github/stars/BwayCarl/burger)](https://img.shields.io/github/stars/BwayCarl/burger)
 ## Homework Assignment - Week 13
 #### Rutgers Coding Bootcamp / RUT-JER-FSF-PT-06-2020-U-C
 
