@@ -15,7 +15,7 @@ router.get("/", function(req, res) {
 
 //Creating a new burger with POST Method
 router.post("/burgers/create", (req, res) => {
-    burger.createOne(req.body.burgerName, (result) => {
+    burger.create(req.body.burgerName, (result) => {
         console.log(result);
         res.redirect("/");
       });
@@ -23,7 +23,7 @@ router.post("/burgers/create", (req, res) => {
 
 //Updating whether object is devoured with PUT Method
 router.put("/burgers/:id", (req, res) => {
-    burger.updateOne(req.params.id,function (result) {
+    burger.update(req.params.id,function (result) {
         console.log(result);
         res.sendStatus(200);
       });
