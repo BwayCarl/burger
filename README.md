@@ -39,7 +39,7 @@ A burger logger using MySQL, Node, Express, Handlebars and a homemade ORM follow
 
 
 ## *Usage*
-You can use this app using this **[Heroku Link](https://)**
+You can use this app using this **[Heroku Link.](https://radiant-tor-88185.herokuapp.com/burgers)**
 
 ## *Contributing* 
  Feel free to contribute. Just contact me and fork away!
