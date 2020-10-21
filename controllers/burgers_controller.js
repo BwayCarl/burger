@@ -7,11 +7,11 @@ router.get("/", function(req, res) {
     res.redirect("/burgers");
   });
 
-  router.get("/burgers", function(req, res) {
-    burger.all(function(allBurgers) {
-      res.render("index", { burger_data: allBurgers });
+  router.get("/burgers", (req, res) => {
+      burger.all(function (allBurgers) {
+        res.render("index", { burger_data: allBurgers });
+      });
     });
-  });
 
 //Creating a new burger with POST Method
 router.post("/burgers/create", (req, res) => {
