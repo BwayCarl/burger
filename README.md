@@ -1,6 +1,6 @@
 # "Eat-Da-Burger" App
 [![Personal IDBadge](https://img.shields.io/badge/Dev-BwayCarl-red)](https://bwaycarl.github.io/Portfolio/)
-[![GitHub license](https://img.shields.io/github/license/BwayCarl/burger](https://github.com/BwayCarl/burger/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/BwayCarl/burger)](https://github.com/BwayCarl/burger/blob/master/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/BwayCarl/burger)](https://github.com/BwayCarl/burger/issues)
 [![GitHub forks](https://img.shields.io/github/forks/BwayCarl/burger)](https://github.com/BwayCarl/burger/network)
 [![GitHub stars](https://img.shields.io/github/stars/BwayCarl/burger)](https://github.com/BwayCarl/burger/stargazers)
