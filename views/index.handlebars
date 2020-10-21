@@ -6,7 +6,7 @@
 			<h1> Eat-Da-Burger! </h1>
 		</div>
 		{{!-- Left Column - Burger List --}}
-		<div class="col-md-6 text-center">
+		<div class="col-md-6 text-center to-eat">
 			<h4>Burgers to Eat:</h4>
 			<div class="row">
 			  {{#each burger_data}}
@@ -27,7 +27,7 @@
 			</div>
 		</div>
 		{{!-- Right Column - Burgers Devoured --}}
-		<div class="col-md-6 text-center">
+		<div class="col-md-6 text-center eaten">
 			<h4>Burgers Eaten:</h4>
 			  {{#each burger_data}}
 			  	{{#if this.devoured}}
@@ -43,11 +43,11 @@
 		<div class="col-md-3"></div>
 		<div class="col-md-6 text-center">
 			<form action="/burgers/create" method="POST">
-				<input type="text" class="form-control" name="burgerName" value="" id="enter_text">
+			<p>Enter a burger you want to eat and click the "Submit" button.</p>
+				<input type="text" class="form-control" name="burgerName" placeholder="Enter your favorite burger here!"value="" id="enter_text">
 				<br>
 				<button type="submit" class="btn btn-warning" >Submit</button>
 			</form>
-			<p>Enter a burger you want to eat and click the "Submit" button.</p>
 		</div>
 	</div>
 </div>
