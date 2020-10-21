@@ -9,30 +9,33 @@
 
 ## *Table of Contents*
 - [Description](#description)
- - [Installation](#installation)
- - [Usage](#usage)
- - [Contributing](#contributing)
- - [Authors](#authors)
- - [Screenshots](#screenshots)
- - [Contact Me](#contact-me)
- - [License](#license)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Authors](#authors)
+- [Screenshots](#screenshots)
+- [Contact Me](#contact-me)
+- [License](#license)
 
 ## *Description* 
 A burger logger using MySQL, Node, Express, Handlebars and a homemade ORM following the MVC design pattern; uses Node and MySQL to query and route data in the app, and Handlebars to generate the HTML.
 
 ## *Installation* 
- After cloning the repo, enter your MySql password in the `config/connection.js` file.
+ - After cloning the repo, enter your MySql password in the `config/connection.js` file.
  
- Run ```npm install``` from your terminal to install the necessary dependencies:
+ - Run ```npm install``` from your terminal to install the necessary dependencies:
  
- ```express ```
+    - ```express ```
 
- ```express-handlebars ```
+    - ```express-handlebars ```
 
-  ```mysql ```
+    - ```jquery```
 
+    - ```mysql ```
 
- Run ```node server.js``` from your terminal and use ```localhost:8080``` in your browswer.
+- Create your MySQL database with the schema and seeds provided in the ```db``` folder.
+
+ - Run ```node server.js``` from your terminal and use ```localhost:8080``` in your browser.
 
 
 ## *Usage*
